@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥♥ عـ❣ـہيد مـ❣ـہبـ❣ـہآركـ❣ـہ ي حـ❣ـہتـ❣ـہهـ❣ـہ💋🤩♥♥</title>
+    <style>
+        /* خلفية سماء ليلية عميقة وساحرة */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #01112e 0%, #000 100%);
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+
+        /* حاوية النجوم */
+        .stars-container {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.3); }
+        }
+
+        /* تصميم البرواز النيون الفخم الجديد */
+        .card {
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(25px);
+            border-radius: 35px; 
+            padding: 50px 30px; 
+            text-align: center;
+            width: 90%;
+            max-width: 520px; 
+            z-index: 10;
+            position: relative;
+            border: 3px solid #fff; 
+            box-shadow: 
+                0 0 15px #fff,
+                0 0 30px #ff4d6d,
+                0 0 50px #ff4d6d,
+                inset 0 0 20px rgba(255, 77, 109, 0.5);
+            animation: neonPulse 2.5s infinite ease-in-out;
+            overflow: hidden;
+        }
+
+        @keyframes neonPulse {
+            0%, 100% { box-shadow: 0 0 15px #fff, 0 0 30px #ff4d6d, 0 0 50px #ff4d6d; }
+            50% { box-shadow: 0 0 10px #fff, 0 0 20px #ff4d6d, 0 0 35px #ff4d6d; }
+        }
+
+        /* --- تأثير العنوان الملون المتحرك --- */
+        h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 25px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff4d6d, #fff, #ffd700, #ff4d6d);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: textGradient 4s linear infinite, textPulse 2s infinite ease-in-out;
+            text-shadow: 0 0 10px rgba(255, 77, 109, 0.6);
+        }
+
+        @keyframes textGradient {
+            100% { background-position: 200% center; }
+        }
+
+        @keyframes textPulse {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.03); opacity: 1; }
+        }
+        
+        /* --- تنسيق نص الرسالة الملون والمتوهج (حل مشكلة الأسود) --- */
+        p {
+            font-size: 1.2rem; 
+            line-height: 1.8; 
+            margin-bottom: 40px;
+            font-weight: 400;
+            color: #ffffff; /* لون أساسي أبيض للوضوح */
+            text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #ff4d6d, /* توهج ملون */
+                0 0 15px #ff4d6d;
+        }
+
+        /* --- تأثير تلوين الكلمات المميزة بالرسالة --- */
+        .highlight {
+            color: #ffd700; /* لون ذهبي */
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4d6d;
+        }
+
+        .highlight-2 {
+            color: #fff; /* لون أبيض متوهج قوي */
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff4d6d;
+        }
+
+        /* تنسيق الزر النيون */
+        .btn {
+            background: transparent;
+            color: #ff4d6d;
+            border: 2px solid #ff4d6d;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            cursor: pointer;
+            box-shadow: 0 0 15px #ff4d6d, inset 0 0 10px rgba(255, 77, 109, 0.5);
+            transition: 0.4s;
+            position: relative;
+        }
+
+        .btn:hover { 
+            background: #ff4d6d;
+            color: #fff;
+            box-shadow: 0 0 40px #ff4d6d, 0 0 60px #ff4d6d;
+        }
+
+        /* تنسيق القلوب */
+        .heart {
+            position: absolute;
+            color: #ff4d6d;
+            font-size: 25px;
+            pointer-events: none;
+            animation: fall linear forwards;
+            z-index: 11;
+            text-shadow: 0 0 10px #ff4d6d, 0 0 20px #fff;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars-container" id="stars"></div>
+
+    <div class="card">
+        <h1>عيد مبارك ❤️✨</h1>
+        
+        <p>
+            <span class="highlight-2">كل سنة وانت طيب ياغلى صاحب/ه على قلبي❤️✨</span><br>
+            عيد سعيد عليك يا رب، ويكون عيد <span class="highlight">مليان فرحة</span> وراحة بال وسعادة من غير أيحزن 🤍<br>
+            يا رب الأيام الجاية تكون كلها خير ليك، وتحقق فيها كل اللي نفسك فيه وأكتر، وتشوف نفسك دايمًا في <span class="highlight">أحسن حال 🎉</span><br>
+            ربنا يرزقك الصحة والسعادة وراحة القلب، ويبعد عنك أي هم أو زعل 🌸<br>
+            وجودك في حياتي <span class="highlight-2">نعمة كبيرة بجد،</span> وأنا ممتن* إنك جنبي ودايمًا سند وضحكة حلوة في أي وقت 🤗<br>
+            يا رب تفضل <span class="highlight">منوّر حياتي</span> وما يحرمنيش منك أبدًا، ونفضل مع بعض في كل عيد وكل مناسبة حلوة 🌙💫<br>
+            عيدك مبارك يا حته 💋، ويتعاد عليك بالخير واليمن والبركات 🐑✨
+        </p>
+
+        <button class="btn" onclick="startSurprise()">اسمع المفاجأة 🎵</button>
+        
+        <audio id="audio" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        // توليد النجوم
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 180; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * 3 + 1 + 'px'; 
+            star.style.width = size; star.style.height = size;
+            star.style.left = Math.random() * 100 + 'vw';
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
+            starsContainer.appendChild(star);
+        }
+
+        function startSurprise() {
+            // محاولة تشغيل الصوت
+            document.getElementById("audio").play().catch(error => {
+                console.log("المتصفح منع التشغيل التلقائي، جرب مرة أخرى");
+            });
+
+            // تغيير نص الزر
+            const btn = document.querySelector('.btn');
+            btn.innerHTML = "بحبك للأبد";
+
+            // تأثير القلوب المتساقطة
+            setInterval(() => {
+                const h = document.createElement('div');
+                h.className = 'heart';
+                h.innerHTML = '❤️';
+                h.style.left = Math.random() * 100 + 'vw';
+                h.style.top = '-20px';
+                h.style.fontSize = (Math.random() * 10 + 20) + 'px'; 
+                h.style.animationDuration = (Math.random() * 2.5 + 2) + 's'; 
+                document.body.appendChild(h);
+                setTimeout(() => h.remove(), 5000);
+            }, 300);
+        }
+    </script>
+</body>
+</html>
+

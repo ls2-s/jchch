@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>♥♥   عـ❣ـہيد مـ❣ـہبـ❣ـہآركـ❣ـہ برعايت لورد يمزه💋🤩♥♥</title>
+    <title>♥♥ عـ❣ـہيد مـ❣ـہبـ❣ـہآركـ❣ـہ برعايت لورد يمزه💋🤩♥♥</title>
     <style>
         /* خلفية سماء ليلية عميقة وساحرة */
         body {
             margin: 0;
-            height: 100vh; /* ارتفاع الصفحة يساوي ارتفاع الشاشة */
-            width: 100vw; /* عرض الصفحة يساوي عرض الشاشة */
-            overflow: auto; /* تفعيل خاصية السكرول (التمرير) عندما يتجاوز المحتوى حجم الشاشة */
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             position: relative;
-            background: radial-gradient(circle at center, #01112e 0%, #000 100%); /* نقل الخلفية هنا */
+            background: radial-gradient(circle at center, #01112e 0%, #000 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* حاوية النجوم */
         .stars-container {
-            position: fixed; /* تغييرها من absolute إلى fixed لتثبيت الخلفية خلف المحتوى أثناء التمرير */
+            position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: 0;
-            pointer-events: none; /* لجعل النجوم لا تؤثر على التمرير */
+            pointer-events: none;
         }
 
         .star {
@@ -36,7 +39,7 @@
             50% { opacity: 1; transform: scale(1.3); }
         }
 
-        /* تصميم البرواز النيون الفخم الجديد */
+        /* تصميم البرواز النيون الفخم */
         .card {
             background: rgba(10, 10, 10, 0.7);
             backdrop-filter: blur(25px);
@@ -46,7 +49,7 @@
             width: 90%;
             max-width: 520px; 
             z-index: 10;
-            position: relative; /* تم التعديل هنا */
+            position: relative;
             border: 3px solid #fff; 
             box-shadow: 
                 0 0 15px #fff,
@@ -55,12 +58,53 @@
                 inset 0 0 20px rgba(255, 77, 109, 0.5);
             animation: neonPulse 2.5s infinite ease-in-out;
             overflow: hidden;
-            margin: 50px auto; /* إضافة هامش حول البطاقة لتسهيل التمرير */
+            margin: 50px auto;
         }
 
         @keyframes neonPulse {
             0%, 100% { box-shadow: 0 0 15px #fff, 0 0 30px #ff4d6d, 0 0 50px #ff4d6d; }
             50% { box-shadow: 0 0 10px #fff, 0 0 20px #ff4d6d, 0 0 35px #ff4d6d; }
+        }
+
+        /* --- عداد الزوار البسيط (مضاف حديثاً) --- */
+        .visitor-counter {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border: 2px solid #ff4d6d;
+            border-radius: 50px;
+            padding: 12px 25px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 100;
+            box-shadow: 
+                0 0 20px #ff4d6d,
+                inset 0 0 10px rgba(255, 77, 109, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .visitor-counter .icon {
+            color: #ff4d6d;
+            font-size: 28px;
+            text-shadow: 0 0 15px #ff4d6d;
+        }
+
+        .visitor-counter .number {
+            color: #fff;
+            text-shadow: 
+                0 0 10px #ff4d6d,
+                0 0 20px #fff;
+        }
+
+        .visitor-counter .label {
+            font-size: 16px;
+            color: #ffd700;
+            margin-right: 5px;
         }
 
         /* --- تأثير العنوان الملون المتحرك --- */
@@ -86,27 +130,26 @@
             50% { transform: scale(1.03); opacity: 1; }
         }
         
-        /* --- تنسيق نص الرسالة الملون والمتوهج (حل مشكلة الأسود) --- */
+        /* --- تنسيق نص الرسالة --- */
         p {
             font-size: 1.2rem; 
             line-height: 1.8; 
             margin-bottom: 40px;
             font-weight: 400;
-            color: #ffffff; /* لون أساسي أبيض للوضوح */
+            color: #ffffff;
             text-shadow: 
                 0 0 5px #fff,
-                0 0 10px #ff4d6d, /* توهج ملون */
+                0 0 10px #ff4d6d,
                 0 0 15px #ff4d6d;
         }
 
-        /* --- تأثير تلوين الكلمات المميزة بالرسالة --- */
         .highlight {
-            color: #ffd700; /* لون ذهبي */
+            color: #ffd700;
             text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4d6d;
         }
 
         .highlight-2 {
-            color: #fff; /* لون أبيض متوهج قوي */
+            color: #fff;
             text-shadow: 0 0 10px #fff, 0 0 20px #ff4d6d;
         }
 
@@ -133,7 +176,7 @@
 
         /* تنسيق القلوب */
         .heart {
-            position: fixed; /* تغييرها من absolute إلى fixed لتظل القلوب تظهر في كل الشاشة أثناء التمرير */
+            position: fixed;
             color: #ff4d6d;
             font-size: 25px;
             pointer-events: none;
@@ -145,20 +188,21 @@
         @keyframes fall {
             to { transform: translateY(110vh) rotate(360deg); opacity: 0; }
         }
-
-        /* عنصر فارغ لدفع المحتوى للأسفل قليلاً */
-        .spacer {
-            height: 50px;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
 
     <div class="stars-container" id="stars"></div>
 
-    <!-- إضافة عنصر فارغ قبل البطاقة لتوفير مساحة للتمرير من الأعلى -->
-    <div style="min-height: 50px; width: 100%;"></div>
+    <!-- عداد الزوار البسيط (في الأسفل يسار) -->
+    <div class="visitor-counter">
+        <span class="icon">👥</span>
+        <span class="number" id="visitorCount">0</span>
+        <span class="label">زائر</span>
+    </div>
+
+    <!-- إضافة عنصر فارغ قبل البطاقة -->
+    <div style="min-height: 20px; width: 100%;"></div>
 
     <div class="card">
         <h1>عيد مبارك ي حتةة من لورد ❤️✨</h1>
@@ -180,9 +224,6 @@
         </audio>
     </div>
 
-    <!-- إضافة عنصر فارغ بعد البطاقة لتوفير مساحة للتمرير من الأسفل -->
-    <div style="min-height: 50px; width: 100%;"></div>
-
     <script>
         // توليد النجوم
         const starsContainer = document.getElementById('stars');
@@ -197,6 +238,48 @@
             starsContainer.appendChild(star);
         }
 
+        // ===== عداد الزوار البسيط (كل زيارة ×3) =====
+        const STORAGE_KEY = 'visitor_counter_x3_simple';
+
+        // دالة للحصول على العداد من التخزين المحلي
+        function getVisitorCount() {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            return stored ? parseInt(stored) : 0;
+        }
+        
+        // دالة لحفظ العداد
+        function saveVisitorCount(count) {
+            localStorage.setItem(STORAGE_KEY, count);
+        }
+        
+        // دالة لتحديث العرض
+        function updateDisplay() {
+            const count = getVisitorCount();
+            document.getElementById('visitorCount').textContent = count;
+        }
+        
+        // دالة لإضافة زيارة جديدة (العدد ×3)
+        function addVisit() {
+            let count = getVisitorCount();
+            count += 3; // كل زيارة تضيف 3
+            saveVisitorCount(count);
+            updateDisplay();
+        }
+
+        // عند تحميل الصفحة
+        window.onload = function() {
+            // نضيف 3 لكل زيارة
+            addVisit();
+        };
+
+        // للتأكد من تحديث العداد إذا تم فتح الموقع في تبويب آخر
+        window.addEventListener('storage', function(e) {
+            if (e.key === STORAGE_KEY) {
+                updateDisplay();
+            }
+        });
+
+        // ===== دوال القلوب والصوت =====
         function startSurprise() {
             // محاولة تشغيل الصوت
             document.getElementById("audio").play().catch(error => {
